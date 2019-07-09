@@ -1,9 +1,11 @@
 import React from "react";
 import { mount } from "enzyme";
+import { render } from '@testing-library/react';
 import Profile from "./Profile";
 
-const wrapper = mount(<Profile username="Andrea" name="beomyeon" />);
-describe("<Profile />", () => {
+
+describe("<Profile /> with enzyme", () => {
+  const wrapper = mount(<Profile username="Andrea" name="beomyeon" />);
   it("matches snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
@@ -18,3 +20,19 @@ describe("<Profile />", () => {
     expect(spanElement.text()).toBe("(beomyeon)");
   });
 });
+
+describe('<Profile /> with react-testing-library', () => {
+  const utils = render(<Profile username="Andrea" name="beomyeon"/>);
+  it('matches snapshot', () => {
+    const utils = render(<Profile username="Andrea" name="beomyeon"/>);
+    expect(utils.container).toMatchSnapshot();
+  });
+
+  it('shows the props correctly', () => {
+    utils.getAllByText("Andrea!");
+    utils.getAllByText("(beomyeon)");
+    utils.getAllByText(/beom/);
+  })
+})
+
+

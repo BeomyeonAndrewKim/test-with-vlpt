@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Profile /> matches snapshot 1`] = `
+exports[`<Profile /> with enzyme matches snapshot 1`] = `
 <Profile
   name="beomyeon"
   username="Andrea"
@@ -18,4 +18,21 @@ exports[`<Profile /> matches snapshot 1`] = `
     </span>
   </div>
 </Profile>
+`;
+
+exports[`<Profile /> with react-testing-library matches snapshot 1`] = `
+<div>
+  <div>
+    <b>
+      Andrea
+      !
+    </b>
+     
+    <span>
+      (
+      beomyeon
+      )
+    </span>
+  </div>
+</div>
 `;
