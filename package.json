@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/react": "^8.0.4",
     "@types/jest": "^24.0.15",
     "@types/node": "^12.0.12",
     "@types/react": "^16.8.23",
@@ -10,6 +11,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
+    "jest-dom": "^4.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
