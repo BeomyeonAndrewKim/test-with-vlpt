@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<HookCounter/> matches snapshot 1`] = `
+exports[`<HookCounter/> with enzyme matches snapshot 1`] = `
 <HookCounter>
   <div>
     <h2>
@@ -18,4 +18,20 @@ exports[`<HookCounter/> matches snapshot 1`] = `
     </button>
   </div>
 </HookCounter>
+`;
+
+exports[`<HookCounter/> with react-testing-library matches snapshot 1`] = `
+<div>
+  <div>
+    <h2>
+      0
+    </h2>
+    <button>
+      +1
+    </button>
+    <button>
+      -1
+    </button>
+  </div>
+</div>
 `;
