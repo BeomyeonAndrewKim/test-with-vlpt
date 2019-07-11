@@ -3,6 +3,7 @@ import Profile from "./Profile";
 import Counter from "./Counter";
 import HookCounter from "./HookCounter";
 import DealyedToggle from "./DelayedToggle";
+import UserProfile from "./UserProfile";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Counter />
       <HookCounter />
       <DealyedToggle />
+      <UserProfile id={1} />
     </div>
   );
 }
